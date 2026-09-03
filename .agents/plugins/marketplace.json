@@ -1,0 +1,20 @@
+{
+  "name": "elad-codex-plugins",
+  "interface": {
+    "displayName": "ELAD Codex Plugins"
+  },
+  "plugins": [
+    {
+      "name": "elad-dynamics-ado-orchestrator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/elad-dynamics-ado-orchestrator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

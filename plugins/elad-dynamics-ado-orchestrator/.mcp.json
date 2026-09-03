@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "@azure-devops/mcp"],
+      "env": {
+        "AZDO_ORG_SERVICE_URL": "${AZDO_ORG_SERVICE_URL}",
+        "AZDO_PAT": "${AZDO_PAT}",
+        "AZDO_DEFAULT_PROJECT": "${AZDO_DEFAULT_PROJECT}"
+      }
+    },
+    "dataverse": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/dataverse", "mcp", "${DATAVERSE_URL}"],
+      "env": {
+        "DATAVERSE_URL": "${DATAVERSE_URL}",
+        "DATAVERSE_TENANT_ID": "${DATAVERSE_TENANT_ID}"
+      }
+    }
+  }
+}

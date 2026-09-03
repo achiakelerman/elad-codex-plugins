@@ -1,0 +1,3 @@
+interface:
+  display_name: ELAD Dynamics Orchestrator
+  short_description: Safely automate Dynamics 365 delivery from Azure DevOps through QA.

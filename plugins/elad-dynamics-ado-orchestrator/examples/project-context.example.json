@@ -1,0 +1,68 @@
+{
+  "status": "ready",
+  "projectName": "example-dynamics-project",
+  "workspace": {
+    "codePath": "C:/Dev/example-dynamics-project",
+    "githubRemoteUrl": "https://github.com/example-org/example-dynamics-project.git",
+    "runArtifactsPath": ".elad/orchestrator-runs"
+  },
+  "ado": {
+    "organizationUrl": "https://dev.azure.com/example-org",
+    "project": "example-project",
+    "repository": "example-dynamics-project",
+    "defaultBranch": "master",
+    "baseRemote": "origin",
+    "requireRemoteSyncBeforeWork": true,
+    "triggerTag": "orchestrator-dev",
+    "doneTag": "done-by-orchestrator",
+    "stateAfterQaPass": "Testing"
+  },
+  "dataverse": {
+    "environmentUrl": "https://example.crm.dynamics.com",
+    "environmentType": "development",
+    "solutionUniqueName": "ExampleSolution",
+    "publisherPrefix": "ex",
+    "publishMode": "webresource-update-and-publish",
+    "pluginRegistrationMode": "pac-plugin-push"
+  },
+  "qa": {
+    "mode": "playwright",
+    "baseAppUrl": "https://example.crm.dynamics.com/main.aspx?appid=<app-id>",
+    "playwrightProjectPath": "tests/playwright",
+    "manualFallbackAllowed": true,
+    "screenshotEvidence": true
+  },
+  "deployment": {
+    "pluginProjectPath": "src/Plugins/Example.Plugins/Example.Plugins.csproj",
+    "webResourceRoot": "src/WebResources",
+    "solutionZipPath": "artifacts/ExampleSolution_unmanaged.zip",
+    "localValidationCommands": ["dotnet build src/Plugins/Example.Plugins/Example.Plugins.csproj --configuration Debug"]
+  },
+  "workflow": {
+    "enabledTaskTypes": ["plugin-csharp", "javascript-webresource", "configuration", "mixed"],
+    "executionMode": "automatic",
+    "deletionPolicy": "deny",
+    "requireLocalValidationBeforeCloud": true,
+    "requireQaBeforeGithubPush": true
+  },
+  "modelPolicy": {
+    "profile": "balanced",
+    "routingMode": "native-when-available",
+    "tiers": {
+      "strategic": { "modelHint": "strong", "thinking": "high" },
+      "execution": { "modelHint": "standard", "thinking": "medium" },
+      "routine": { "modelHint": "economy", "thinking": "low" }
+    }
+  },
+  "security": {
+    "credentialsSource": "environment-or-codex-auth",
+    "allowProduction": false,
+    "storeSecretsInContext": false
+  },
+  "conventions": {
+    "languages": ["csharp", "javascript"],
+    "preferExistingPatterns": true,
+    "minimalChangeOnly": true,
+    "searchEntireSolutionFirst": true
+  }
+}

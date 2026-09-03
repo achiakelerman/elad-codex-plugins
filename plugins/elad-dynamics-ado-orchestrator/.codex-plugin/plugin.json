@@ -1,0 +1,31 @@
+{
+  "name": "elad-dynamics-ado-orchestrator",
+  "version": "1.0.0",
+  "description": "Generic Azure DevOps to Dataverse delivery workflow for ELAD Dynamics 365 projects.",
+  "author": {
+    "name": "ELAD Systems (Created by Achia Kellerman)",
+    "email": "achian@elad.co.il",
+    "url": "https://www.elad.co.il"
+  },
+  "homepage": "https://www.elad.co.il",
+  "license": "Proprietary",
+  "keywords": ["elad", "dynamics", "crm", "azure-devops", "dataverse", "qa"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ELAD Dynamics ADO Orchestrator",
+    "shortDescription": "Onboard, develop, deploy, test, and update ADO for Dynamics projects.",
+    "longDescription": "Generic delivery workflow for ELAD Dynamics 365 projects. It validates project setup, plans Azure DevOps work, applies focused changes, validates locally, deploys only to Dataverse development, runs QA, and updates Azure DevOps after evidence passes.",
+    "developerName": "ELAD Systems - Created by Achia Kellerman",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Execute"],
+    "websiteURL": "https://www.elad.co.il",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Use ELAD Dynamics Orchestrator to onboard this Dynamics project before implementation.",
+      "Use ELAD Dynamics Orchestrator to process ready Azure DevOps work through local validation, DEV deployment, QA, GitHub push, and Azure DevOps update."
+    ],
+    "brandColor": "#00A7C6"
+  }
+}

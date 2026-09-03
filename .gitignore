@@ -1,0 +1,6 @@
+# Local configuration, credentials, and generated release artifacts.
+.elad/project-context.json
+.elad/orchestrator-runs/
+dist/
+*.zip
+*.sha256
