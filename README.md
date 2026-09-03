@@ -14,3 +14,4 @@ Private team marketplace for reusable ELAD Codex plugins.
 4. Start a new Codex task and ask the plugin to onboard the current Dynamics project.
 
 See `docs/INSTALL.md` for the complete installation and update flow.
+For Hebrew team-lead onboarding, see `plugins/elad-dynamics-ado-orchestrator/docs/TEAM-LEAD-SETUP.he.md`.

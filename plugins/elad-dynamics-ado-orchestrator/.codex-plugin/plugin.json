@@ -1,6 +1,6 @@
 {
   "name": "elad-dynamics-ado-orchestrator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generic Azure DevOps to Dataverse delivery workflow for ELAD Dynamics 365 projects.",
   "author": {
     "name": "ELAD Systems (Created by Achia Kellerman)",
