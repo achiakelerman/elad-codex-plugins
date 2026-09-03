@@ -2,21 +2,20 @@
 
 ## Team marketplace
 
-Clone this private GitHub repository to a local directory, then run:
+Connect the private GitHub marketplace directly:
 
 ```powershell
-codex plugin marketplace add C:\path\to\elad-codex-plugins
-codex plugin add elad-dynamics-ado-orchestrator@elad-codex-plugins
+codex plugin marketplace add achiakelerman/elad-codex-plugins
 ```
 
-Start a new Codex task after installation. The plugin will guide the team lead through project setup.
+Restart Codex, open the Plugin Directory, and install `ELAD Dynamics Orchestrator` from `ELAD Codex Plugins`. Start a new Codex task after installation.
 
 ## ZIP installation
 
 Download the versioned ZIP and extract it without adding an extra directory level. The extracted plugin directory must contain `.codex-plugin\plugin.json` directly beneath `elad-dynamics-ado-orchestrator`.
 
-For a local marketplace, place the extracted plugin under `plugins\elad-dynamics-ado-orchestrator` in a marketplace repository and use the same installation commands above.
+For a local marketplace, place the extracted plugin under `plugins\elad-dynamics-ado-orchestrator` in a marketplace repository, run `codex plugin marketplace add <repository-root>`, then install it from Plugin Directory.
 
 ## Updates
 
-Pull the desired Git tag, reinstall the plugin from `elad-codex-plugins`, then start a new Codex task. Never edit installed cache folders.
+Run `codex plugin marketplace upgrade elad-codex-plugins`, restart Codex, then start a new task. Never edit installed cache folders.

@@ -8,9 +8,9 @@ Private team marketplace for reusable ELAD Codex plugins.
 
 ## Team installation
 
-1. Clone this repository to a local directory.
-2. Run `codex plugin marketplace add <repository-root>` once.
-3. Run `codex plugin add elad-dynamics-ado-orchestrator@elad-codex-plugins`.
+1. Run `codex plugin marketplace add achiakelerman/elad-codex-plugins` once.
+2. Restart Codex and open the Plugin Directory.
+3. Install `ELAD Dynamics Orchestrator` from `ELAD Codex Plugins`.
 4. Start a new Codex task and ask the plugin to onboard the current Dynamics project.
 
 See `docs/INSTALL.md` for the complete installation and update flow.
